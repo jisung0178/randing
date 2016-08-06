@@ -1,0 +1,109 @@
+    
+<div class="header_warp">
+
+	
+		<div class="header">
+			<div class="logo_warp">
+				<img src="logo2.png" class="logo" alt="연애부">
+			</div>
+			<!--<div class="menu_warp">-->
+			<!--	<a href="https://play.google.com/store/apps/details?id=com.togetus.yeonaeboo" class="app-link" onclick="window.open(this.href);return false;"><span class="menu_item">Android</span></a>-->
+			<!--	<a href="#" class="app-link" onclick="return app_message()"><span class="menu_item">iPhone</span></a>-->
+			<!--	<a href="https://yeonaeboo.com/ko/account/login" onclick="return check_browser()"><span class="menu_item">Login</span></a>-->
+			<!--</div>-->
+		</div>
+	</div>
+	
+<div class="screen_warp" style="height: 721px; line-height: 721px; background-image: url(image1.jpg);">
+			
+		<img src="12121.png" class="screen_copy" alt="주머니가 비었어도" >
+		<div class="diagonal bottom"  style="background-image: url(diagonal_bottom.png);"></div>
+	</div>
+<div class="screen_warp" style="height: 721px; line-height: 721px; background-image: url(image2.jpg);">
+		<div class="diagonal top" style="background-image: url(diagonal_top.png);"></div>
+		<img src="1211.png" class="screen_copy" alt="오빠를 응원할 권리가 있다">
+		<div class="diagonal bottom" style="background-image: url(diagonal_bottom.png);"></div>
+	</div>
+
+
+
+	<div class="applications" style="text-align:center;">
+		<!--<img src="logo2.png" class="symbol" alt="내 연애의 꿀팁">-->
+		<!--<img src="11.png" class="screen_copy" style="width:40%;height:auto" alt="100% 무료 스타 응원 서비스">-->
+		<br><br><br>
+		<!-- email form 삽입 -->
+		<img src="email.png" style="width:30%"class="symbol" alt="내 연애의 꿀팁">
+	
+	<form style="margin:auto;margin-top: 15px;text-align:center;" action="/home/email" method="post">
+			<input type="email" class="form-control" name="email" id="exampleInputEmail1" placeholder="Email" style="
+			width: 350px;
+			font-size:15px;
+			display:inline-block;
+			border: 2px solid black;
+			box-shadow:none;
+			border-radius: 4px;
+			">
+			<button type="submit" class="btn btn-default" style="
+			    background-image: none;
+			    background-color: #000000;
+			    color: #fff;
+			    box-shadow: none;
+			    height: 34px;
+			    width: 80px;
+			    border: 0;
+			    vertical-align: top;
+			    margin-left: 8px;">응원하기</button>
+	</form>
+	<a href="#" style="
+	    /* display: block; */
+	    color: #f00;
+	    font-size: 20px;
+	    font-weight: 500;
+	    text-decoration: underline;
+	    margin-top: 20px;">설문조사 하러가기</a>
+		
+	</div>
+	<div class="footer_warp">
+		<div class="footer">
+			<div class="logo_warp">
+				<img src="logo3.png" class="logo_togetus" alt="땡스투블랙">
+				<span class="text" style="padding-left:7px;">© COPYRIGHT 2015.</span>
+				<a href="mailto:tlliyun@naver.com" onclick="window.open(this.href);return false;"><span class="text" style="padding-left:7px;color:black;font-weight:500">CONTACT US.</span></a>
+			</div>
+		
+		</div>
+	</div>
+	
+	
+	<script>
+	(function(d){var p={},e,a,h=document,i=window,f=h.documentElement,j=d.expando;d.event.special.inview={add:function(a){p[a.guid+"-"+this[j]]={data:a,$element:d(this)}},remove:function(a){try{delete p[a.guid+"-"+this[j]]}catch(d){}}};d(i).bind("scroll resize",function(){e=a=null});!f.addEventListener&&f.attachEvent&&f.attachEvent("onfocusin",function(){a=null});setInterval(function(){var k=d(),j,n=0;d.each(p,function(a,b){var c=b.data.selector,d=b.$element;k=k.add(c?d.find(c):d)});if(j=k.length){var b;
+if(!(b=e)){var g={height:i.innerHeight,width:i.innerWidth};if(!g.height&&((b=h.compatMode)||!d.support.boxModel))b="CSS1Compat"===b?f:h.body,g={height:b.clientHeight,width:b.clientWidth};b=g}e=b;for(a=a||{top:i.pageYOffset||f.scrollTop||h.body.scrollTop,left:i.pageXOffset||f.scrollLeft||h.body.scrollLeft};n<j;n++)if(d.contains(f,k[n])){b=d(k[n]);var l=b.height(),m=b.width(),c=b.offset(),g=b.data("inview");if(!a||!e)break;c.top+l>a.top&&c.top<a.top+e.height&&c.left+m>a.left&&c.left<a.left+e.width?
+(m=a.left>c.left?"right":a.left+e.width<c.left+m?"left":"both",l=a.top>c.top?"bottom":a.top+e.height<c.top+l?"top":"both",c=m+"-"+l,(!g||g!==c)&&b.data("inview",c).trigger("inview",[!0,m,l])):g&&b.data("inview",!1).trigger("inview",[!1])}}},250)})(jQuery);
+
+	jQuery(document).ready(function(){
+
+	/*
+	outerTop = jQuery(window).height() * 0.3;
+	innerTop = jQuery(window).height() * 0.1;
+	jQuery(".screen_warp").snapPoint({ 
+	    scrollDelay: 550,
+	    scrollSpeed: 500,
+	    outerTopOffset: outerTop,
+	    innerTopOffset: innerTop,
+	    outerLeftOffset: 0,
+	    innerLeftOffset: 0
+	});
+	*/
+	
+	jQuery(window).scroll(function () {
+		jQuery(".applications").one('inview', function(event, isInView) {
+	        if (isInView) {
+	            jQuery('.header').addClass('hide');
+	        } else {
+		        jQuery('.header').removeClass('hide');
+	        }
+	    });
+	});
+});
+
+</script>

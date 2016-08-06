@@ -1,0 +1,476 @@
+@charset "utf-8";
+
+/*
+	@Author: togetus
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+/*---------------------------------------------------------------------------------*/
+/* Global
+/*---------------------------------------------------------------------------------*/
+
+body {
+	
+					width: 100%;
+					height: 100%;
+	                 color: #474645;
+	               padding: 0;
+	                margin:	0;
+	              position: relative;
+	            background: #fff;
+	
+	         -ms-word-wrap: break-word;
+	             word-wrap: break-word;
+	
+	        font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+	   -moz-font-smoothing: antialiased;
+	
+}
+
+body.block-scroll {
+    	
+	max-height: 100% !important;
+	  overflow: hidden !important;
+	
+}
+
+ol, 
+ul, 
+li {
+	
+	list-style: none;
+	   padding: 0;
+    	margin: 0;
+	
+}
+
+img {
+			border: 0;
+	     max-width: 100%;
+	        height: auto;
+	   line-height: normal;
+	vertical-align: middle;
+	
+}
+
+a {
+	
+	          color: #474645;
+	text-decoration: none;
+	
+}
+
+a:link,
+a:visited {
+	
+	text-decoration: none;
+	
+}
+
+span,
+input,
+button {
+	
+	font-family: 'Varela Round', sans-serif;
+	
+}
+
+.svg {
+	
+	 display: inline-block; *display: inline; zoom: 1;
+	position: relative;
+	
+}
+
+.clear {
+	
+	     clear: both;
+	   display: block;
+	  overflow: hidden;
+	visibility: hidden;
+	     width: 0;
+	    height: 0;
+
+}
+
+
+/*---------------------------------------------------------------------------------*/
+/* Header
+/*---------------------------------------------------------------------------------*/
+
+.header_warp {
+	
+		width: 100%;
+	       top: 0;
+	      left: 0;
+	  position: fixed;
+	   z-index: 999;
+	
+}
+
+.header {
+	
+	 width: 1130px;
+	height: 100px;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	
+	 -webkit-transition: all 0.3s ease-out;
+		-moz-transition: all 0.3s ease-out;
+		 -ms-transition: all 0.3s ease-out;
+		  -o-transition: all 0.3s ease-out;
+		     transition: all 0.3s ease-out;
+	
+}
+
+.header.hide {
+	
+	opacity: 0;
+	
+}
+
+.header .logo_warp {
+	
+	width: 50%;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+}
+
+.header .logo_warp .logo {
+	
+	width: 102px;
+	
+	display: block;
+	position: relative;
+	margin-top: 52px;
+	
+}
+
+.header .menu_warp {
+	
+	width: 50%;
+	height: 100px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	text-align: right;
+	
+}
+
+.header .menu_warp .menu_item {
+	
+	color: #fff;
+	font-size: 18px;
+	line-height: 20px;
+	letter-spacing: -1px;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+	display: inline-block; *display: inline; zoom: 1;
+	position: relative;
+	margin: 80px 0 0 20px;
+	
+}
+
+/*---------------------------------------------------------------------------------*/
+/* Contents
+/*---------------------------------------------------------------------------------*/
+
+.screen_warp {
+	
+	              width: 100%;
+	             height: 1000px;
+	        line-height: 1000px;
+	        text-align: center;
+	           position: relative;
+	            display: inline-block; *display: inline; zoom: 1;
+	background-position: center;
+	    background-size: cover;
+	
+}
+
+.screen_copy {
+	
+	width: auto;
+	height: 116px;
+	
+}
+
+.diagonal {
+	
+        left: 0;
+       width: 100%;
+      height: 160px;
+     display: block;
+    position: absolute;
+    background-position: center;
+    background-size: 100% 160px;
+    
+}
+
+.diagonal.top {
+	
+    top: 0;
+    background-image: url(diagonal_top.png);
+    
+}
+
+.diagonal.bottom {
+	
+    bottom: 0;
+    background-image: url(diagonal_bottom.png);
+    
+}
+
+.diagonal img {
+	
+	width: 100%;
+	height: 160px;
+	
+}
+
+.applications {
+	
+	width: 100%;
+	display: inline-block; *display: inline; zoom: 1;
+	position: relative;
+	margin-top: 100px;
+	text-align: center;
+	
+}
+
+.applications .symbol {
+	
+	width: 186px;
+	height: auto;
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	
+}
+
+.app_item_warp {
+	
+	width: 250px;
+	display: inline-block; *display: inline; zoom: 1;
+	position: relative;
+	margin: 80px 20px 0 0;
+	vertical-align: top;
+	
+}
+
+.app_item_warp:last-child {
+	
+	margin-right: 0;
+	
+}
+
+.app_item_warp .app_item {
+	
+	width: 250px;
+	height: 90px;
+	border: 1px solid #999;
+	border-radius: 10px;
+	overflow: hidden;
+	
+}
+
+.app_item_warp .text {
+	
+	font-size: 11px;
+	padding-top: 5px;
+	
+}
+
+.footer_warp {
+	
+	width: 100%;
+	height: 90px;
+	display: inline-block; *display: inline; zoom: 1;
+	position: relative;
+	border-top: 1px solid #999;
+	margin-top: 100px;
+	
+}
+
+.footer {
+	
+	     width: 1130px;
+	       top: 0;
+	      margin: 0 auto;
+	
+}
+
+.footer .logo_warp {
+	
+	width: 50%;
+	position: relative;
+	display: inline-block; *display: inline; zoom: 1;
+	float: left;
+	
+}
+
+.footer .logo_warp.family_link {
+	
+	text-align: right;
+	
+}
+
+.footer .logo_warp .logo_togetus {
+	
+	width: 92px;
+	height: 30px;
+	display: inline-block; *display: inline; zoom: 1;
+	margin: 35px 0;
+	vertical-align: middle;
+	
+}
+
+.footer .logo_warp .logo_receep {
+	
+	width: 75px;
+	height: 22px;
+	display: inline-block; *display: inline; zoom: 1;
+	margin: 39px 0;
+	vertical-align: middle;
+	
+}
+
+.footer .text {
+	
+	font-size: 11px;
+	position: relative;
+	display: inline-block; *display: inline; zoom: 1;
+	
+}
+
+
+@media screen and (max-width: 1129px) {
+	
+	.header,
+	.header .logo_warp,
+	.footer,
+	.footer .logo_warp {
+		
+		width: 90%;
+		margin: 0 5%;
+		position: relative;
+		left: 0;
+		text-align: left;
+		
+	}
+	
+	.header .logo_warp {
+		
+		height: 80px;
+		
+	}
+	
+	.header .logo_warp .logo {
+		
+		width: 77px;
+		height: 36px;
+		margin-top: 30px;
+		
+	}
+	
+	.header .menu_warp {
+		padding-top: 6px;
+	}
+	
+	.header .menu_warp .app-link {
+		display: none;
+	}
+	
+	.header .menu_warp .menu_item {
+		
+		margin: 0 20px 10px 0;
+		
+	}
+	
+	.footer .logo_warp,
+	.footer .logo_warp.family_link {
+		
+		text-align: center;
+		
+	}
+	
+	.footer .logo_warp .text {
+		
+		display: block;
+		
+	}
+	
+	.footer .logo_warp.family_link .text {
+		
+		margin-top: 20px;
+		
+	}
+	
+	.screen_warp {
+		
+		height: 600px;
+		
+	}
+	
+	.screen_copy {
+		
+		height: 34px;
+		margin: 283px auto;
+		
+	}
+	
+	.diagonal,
+	.diagonal img {
+		
+		height: 60px;
+		
+	}
+	
+	.diagonal {
+		
+		background-size: 100% 60px;
+		
+	}
+	
+	.applications .symbol {
+		
+		width: 140px;
+		
+	}
+	
+	.app_item_warp {
+		
+		width: 194px;
+		margin: 40px 0 0 0;
+		
+	}
+	
+	.app_item_warp .app_item {
+		
+		width: 194px;
+		height: 70px;
+		
+	}
+	
+	.footer .logo_warp .logo_togetus {
+		
+		width: 67px;
+		height: 22px;
+		margin: 20px 0 7px 0;
+		
+	}
+	
+	.footer .logo_warp .logo_receep {
+		
+		width: 61px;
+		height: 18px;
+		margin: 7px 0 20px 0;
+		
+	}
+	
+}
